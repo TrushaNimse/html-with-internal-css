@@ -7,10 +7,207 @@
             background-image: url(https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.home_page_bg_desktop.png-26-4770753d59b970e1.png);
             width: 100%;
             height: 100%;
+            display: flex;
+            align-items: center;
 
         }
-        .quoraLoginSection{
+
+        .loginBoxSection {
+            background-color: #f7f7f8;
+            width: 54%;
+            height: 80%;
+            margin: auto;
+        }
+
+        .quoraLogo {
+            text-align: center;
+            color: #b92b27;
+            font-size: 60px;
+            font-weight: 800;
+
+        }
+
+        .understandingQuora {
+            color: #636466;
+            font-size: 17px;
+            font-weight: 800;
+            text-align: center;
+            margin-top: 10;
+        }
+
+        .quoraLoginSection {
             display: flex;
+            padding-top: 40;
+            padding-bottom: 25;
+        }
+
+        .loginLeftSection {
+            padding: 0px 40px;
+            padding-top: 15px;
+            width: 40%;
+            border-right: 1px solid #dee0e1;
+        }
+
+        .termsAndConditions {
+            color: #939598;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .termsAndConditionsLinks {
+
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(25, 95, 170);
+            text-decoration: none;
+        }
+        .termsAndConditionsLinks:hover{
+            text-decoration: underline;
+        }
+
+        .continueWithGoogle {
+            color: #282829;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+            gap: 2%;
+            border: 1px solid #dee0e1;
+            padding: 8px 8px;
+            margin-top: 20;
+            cursor: pointer;
+        }
+        .continueWithGoogle:hover{
+            background-color: #e8ecf3;
+        }
+
+        .continueWithFacebook {
+            color: #282829;
+            font-size: 17px;
+            display: flex;
+            align-items: center;
+            gap: 2%;
+            border: 1px solid #dee0e1;
+            padding: 8px 8px;
+            margin-top: 7;
+             cursor: pointer;
+        }
+        .continueWithFacebook:hover{
+            background-color: #e8ecf3;
+        }
+
+        .signUp {
+            color: #636466;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 20;
+
+        }
+
+        .loginRightSection {
+            padding: 0px 40px;
+            padding-top: 9px;
+            width: 40%;
+        }
+
+        .loginInfo {
+            color: #282829;
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+
+        .hrColor {
+            border: 1px solid #dee0e1;
+        }
+
+        .yourInfo {
+            margin-top: 15;
+        }
+
+        .yourInfoInput {
+            margin-top: 5;
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid #dee0e1;
+            padding: 12px 8px;
+            font-size: 15px;
+        }
+
+        .forgotPassLink {
+            font-size: 15px;
+            color: #939598;
+            text-decoration: none;
+        }
+
+        .forgotPassLink:hover {
+            text-decoration: underline;
+        }
+
+        .loginButton {
+            background-color: #2e69ff;
+            color: #fff;
+            font-size: 15px;
+            border: none;
+            border-radius: 15px;
+            padding: 7px 16px;
+            opacity: 0.5;
+        }
+
+        .rightEndSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20;
+        }
+
+        .languageSection {
+            display: flex;
+            gap: 3%;
+            justify-content: center;
+        }
+
+        .languageLink {
+            font-size: 13px;
+            color: rgb(25, 95, 170);
+            text-decoration: none;
+        }
+        .languageLink:hover{
+            text-decoration: underline;
+        }
+
+        .languageIndicator {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .languageIndicatorSymbol {
+            color: #636466;
+            font-size: 18px;
+        }
+
+        .footerLinksSection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20;
+        }
+
+        .footerLinks {
+            color: #636466;
+            font-size: 15px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .footerLinks:hover {
+            text-decoration: underline;
+        }
+
+        .dot {
+            color: #636466;
+            font-size: 20;
         }
     </style>
 </head>
@@ -20,39 +217,79 @@
 
     <div class="backgroundPortion">
 
-        <div>
-            <div><img src="https://download.logo.wine/logo/Quora/Quora-Logo.wine.png" width="25%"></div>
-            <div>A place to share knowledge and better understand the world</div>
+        <div class="loginBoxSection">
+            <div class="quoraLogo">Quora</div>
+            <div class="understandingQuora">A place to share knowledge and better understand the world</div>
             <div class="quoraLoginSection">
-                
-                
-                <div>
-                    <div>By continuing you indicate that you agree to </div>
-                    <div>Quora’s Terms of Service and Privacy Policy.</div>
-                    <div><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png"
-                            width="2%">Continue with Google</div>
-                    <div><img>Continue with Facebook</div>
-                    <div>Sign up with email</div>
+
+
+                <div class="loginLeftSection">
+                    <div class="termsAndConditions">By continuing you indicate that you agree to </div>
+                    <div class="termsAndConditions">Quora’s <a href="" class="termsAndConditionsLinks">Terms of Service
+                        </a>and<a href="" class="termsAndConditionsLinks"> Privacy Policy</a>.</div>
+
+                    <div class="continueWithGoogle">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png"
+                            width="7%">
+                        Continue with Google
+                    </div>
+
+                    <div class="continueWithFacebook"><img
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png"
+                            width="7%">
+                        Continue with Facebook
+                    </div>
+                    <div class="signUp">Sign up with email</div>
                 </div>
-                <div>
-                    <div>Login</div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+
+
+                <div class="loginRightSection">
+                    <div class="loginInfo">Login</div>
+                    <hr class="hrColor">
+                    <div class="yourInfo">Email</div>
+                    <div><input type="text" placeholder="Your email" class="yourInfoInput"></div>
+                    <div class="yourInfo">Password</div>
+                    <div><input type="password" placeholder="Your password" class="yourInfoInput"></div>
+                    <div class="rightEndSection">
+                        <div><a href="" class="forgotPassLink">Forgot password?</a></div>
+                        <div><button class="loginButton">Login</button></div>
+                    </div>
                 </div>
-
-
-
             </div>
-            <div></div>
-            <div></div>
+            <hr class="hrColor">
+
+            <div class="languageSection">
+                <div class="languageIndicator">
+                    <a href="https://hi.quora.com/" class="languageLink">हिन्दी</a>
+                    <div class="languageIndicatorSymbol">></div>
+                </div>
+                <div class="languageIndicator">
+                    <a href="https://hi.quora.com/" class="languageLink">मराठी</a>
+                    <div class="languageIndicatorSymbol">></div>
+                </div>
+            </div>
+            <hr class="hrColor">
+            <div class="footerLinksSection">
+                <div><a href="https://www.quora.com/about" class="footerLinks">About</a></div>
+                <span class="dot">·</span>
+                <div><a href="https://www.careers.quora.com/" class="footerLinks">Careers</a></div>
+                <span class="dot">·</span>
+                <div><a href="https://www.quora.com/about/privacy" class="footerLinks">Privacy</a></div>
+                <span class="dot">·</span>
+                <div><a href="https://www.quora.com/about/tos" class="footerLinks">Terms</a></div>
+                <span class="dot">·</span>
+                <div><a href="https://help.quora.com/hc/en-us/requests/new" class="footerLinks">Contact</a></div>
+                <span class="dot">·</span>
+                <div><a href="https://www.quora.com/about/languages" class="footerLinks">Languages</a></div>
+                <span class="dot">·</span>
+                <div><a href="https://www.quora.com/about/your_ad_choices" class="footerLinks">Your Ad Choices</a></div>
+                <span class="dot">·</span>
+                <div><a href="https://www.quora.com/press" class="footerLinks">Press</a></div>
+                <span class="dot">·</span>
+                <div><a href="" class="footerLinks">© Quora, Inc. 2025</a></div>
+            </div>
         </div>
-
-
-
     </div>
-
 </body>
 
 </html>
